@@ -1,0 +1,11 @@
+diff -up bochs-2.2.6/bx_debug/symbols.cc~ bochs-2.2.6/bx_debug/symbols.cc
+--- bochs-2.2.6/bx_debug/symbols.cc~	2008-01-11 23:05:55.000000000 +0100
++++ bochs-2.2.6/bx_debug/symbols.cc	2008-01-11 23:05:55.000000000 +0100
+@@ -94,6 +94,7 @@ char* bx_dbg_disasm_symbolic_address(Bit
+ #endif
+ 
+ using namespace std;
++using namespace __gnu_cxx;
+ 
+ struct symbol_entry_t
+ {
